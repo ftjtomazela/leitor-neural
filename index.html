@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme Texto em Áudio Neural</title>
+    <style>
+        :root {
+            --primary: #2563eb; /* Azul confiável */
+            --accent: #10b981;  /* Verde venda */
+            --dark: #1f2937;
+            --light: #f3f4f6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Hero Section */
+        header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        .subheadline {
+            font-size: 1.2rem;
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+        
+        /* Audio Player Falso (Visual) */
+        .audio-demo {
+            background: #eef2ff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #c7d2fe;
+            margin: 30px auto;
+            max-width: 500px;
+        }
+        .audio-label {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Benefícios */
+        .benefits {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .benefits li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Oferta e Botão */
+        .offer-box {
+            background: var(--dark);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            margin-top: 20px;
+            box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.39);
+            transition: transform 0.2s;
+            animation: pulse 2s infinite;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #059669;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Transformo seu PDF em Áudio Neural Humanizado</h1>
+            <p class="subheadline">Estude no ônibus, na academia ou lavando louça. Envie seu texto e receba o áudio em MP3.</p>
+            
+            <div class="audio-demo">
+                <span class="audio-label">🎧 Ouça um exemplo da voz (Clique no Play):</span>
+                <audio controls style="width: 100%;">
+                    <source src="exemplo.wav" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="benefits">
+            <h2>Por que converter seus textos?</h2>
+            <ul>
+                <li>✅ <strong>Voz Neural Ultra-Realista:</strong> Parece uma pessoa lendo, não um robô.</li>
+                <li>✅ <strong>Economize Tempo:</strong> "Leia" um livro inteiro enquanto dirige.</li>
+                <li>✅ <strong>Ideal para Estudantes:</strong> Resumos, TCCs, Apostilas de Concurso.</li>
+            </ul>
+        </section>
+
+        <section class="offer-box">
+            <h3>Oferta de Lançamento</h3>
+            <p>Cobramos por tempo de áudio gerado.</p>
+            <div class="price">R$ 20,00 <span style="font-size: 1rem; color: #ccc">a cada 10 min</span></div>
+            <p>Entrega rápida via WhatsApp.</p>
+
+            <a href="https://wa.me/55SEUNUMEROAQUI?text=Oi,%20gostaria%20de%20um%20orçamento%20para%20transformar%20texto%20em%20áudio." class="cta-button">
+                QUERO ORÇAMENTO AGORA
+            </a>
+            <p style="margin-top: 15px; font-size: 0.9rem;">👇 Clique para falar direto comigo e enviar seu arquivo</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 AudioService. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
